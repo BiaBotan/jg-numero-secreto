@@ -1,18 +1,8 @@
-/*
-let titulo = document.querySelector('h1');
-titulo.innerHTML = 'Jogo do Número Secreto';
-
-let paragrafo = document.querySelector('p');
-paragrafo.innerHTML = 'Escolha um número entre 1 e 10';
-*/
-
 let listaDeNumerosSorteados = [];
 let numeroLimite = 100;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
-// O codigo abaixo é considerado uma boa prática
-// Isso substituiu o codigo das linhas comentadas
 function exibirTextoNaTela(tag, texto) {
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
